@@ -1,0 +1,214 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 2px #555454;
+  display: flex;
+  justify-content: baseline;
+  flex-direction: row;
+  z-index: 100;
+  overflow: hidden;
+}
+.logo {
+  width: 45%;
+  font-family: "Lobster Two", cursive;
+}
+.logo a {
+  font-size: 2rem;
+}
+.logo a:hover {
+  color: red;
+}
+.logo a span {
+  color: red;
+  font-size: 1.5rem;
+}
+.logo a span:hover {
+  color: black;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 50%;
+}
+nav a {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-family: "Lobster Two", cursive;
+  margin-left: 1rem;
+}
+@media (max-width: 800px) {
+  nav a {
+    display: none;
+  }
+}
+nav a:hover {
+  padding-bottom: -1rem;
+  margin-bottom: 0;
+  border-bottom: 3px solid black;
+  color: black;
+}
+.container {
+  min-height: 70vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/bread.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+.container .logo {
+  color: white;
+  margin: 0 auto;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+@media (max-width: 800px) {
+  .container .logo {
+    width: 100%;
+  }
+}
+.container .logo p {
+  font-size: 2rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .container .logo p {
+    font-size: 1.5rem;
+  }
+}
+.container .logo h2 {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+@media (max-width: 800px) {
+  .container .logo h2 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+  }
+}
+.container .logo .welcome {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding-top: 1rem;
+}
+@media (max-width: 800px) {
+  .container .logo .welcome {
+    display: none;
+  }
+}
+.container .logo button {
+  padding: 1rem;
+  text-transform: uppercase;
+  background-color: red;
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 4rem;
+  width: 30%;
+  align-self: center;
+  box-shadow: 0 2px 2px rgba(17, 17, 17, 0.527);
+  border: none;
+  color: white;
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 3rem;
+}
+@media (max-width: 800px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
+.main-content .text-content {
+  width: 40%;
+}
+@media (max-width: 800px) {
+  .main-content .text-content {
+    width: 95%;
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+}
+.main-content .text-content h4 {
+  color: black;
+  font-size: 2rem;
+}
+.main-content .text-content p {
+  color: black;
+  font-size: 1rem;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.6;
+}
+@media (max-width: 800px) {
+  .main-content .text-content p {
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+}
+.main-content .gallery {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .main-content .gallery {
+    width: 95%;
+    align-self: center;
+  }
+}
+.main-content .gallery img {
+  width: 45%;
+  height: 20vh;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 1rem;
+  color: white;
+  text-align: center;
+  margin: 0;
+  background-color: #5B1519;
+}
+footer h2 {
+  font-size: 2rem;
+  display: block;
+}
+@media (max-width: 800px) {
+  footer h2 {
+    font-size: 1.5rem;
+  }
+}
+footer .icons i {
+  padding: 0.5rem;
+}
+@media (max-width: 800px) {
+  footer .icons i {
+    padding: 0.2rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
