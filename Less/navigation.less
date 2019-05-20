@@ -1,10 +1,13 @@
 header{
     position: fixed;
+    top: 0;
     width: 100%;
     padding: .5rem 1rem;
-    box-shadow: 0 2px 2px @primary-text-color;
+    box-shadow: 0 2px 2px rgb(85, 84, 84);
     display: flex;
     justify-content: baseline;
+    z-index: 100;
+    overflow: hidden;
     .logo{
         width: 45%;
         font-family: 'Pacifico', cursive;
@@ -23,7 +26,14 @@ header{
             width: 50%;
             a{    
                 padding-top: 1rem;
-                text-transform: uppercase;            
+                text-transform: uppercase;
+                &:hover{
+                    box-shadow: 0 2px 2px @primary-text-color;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    background-color: black;
+                    color: white;
+                }            
             }
         }
     }
