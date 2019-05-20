@@ -37,6 +37,7 @@ header nav a {
   padding-top: 1rem;
   text-transform: uppercase;
   font-family: 'Lobster Two', cursive;
+  margin-left: 1rem;
 }
 header nav a:hover {
   padding-bottom: -1rem;
@@ -84,6 +85,29 @@ header nav a:hover {
 .box .image {
   width: 100%;
   height: 65%;
+  position: relative;
+}
+.box .image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(15, 15, 15, 0.37);
+}
+.box .image .overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(33, 34, 34, 0.041);
 }
 @media (max-width: 800px) {
   .box .image {
@@ -91,8 +115,9 @@ header nav a:hover {
     height: 21vh;
   }
 }
-.box .image:hover {
+.box .image:hover .overlay {
   cursor: pointer;
+  opacity: 1;
 }
 .box .image img {
   border-radius: 10px 10px 0 0;
