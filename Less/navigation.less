@@ -9,12 +9,18 @@ header{
     overflow: hidden;
     .logo{
         width: 45%;
-        font-family: 'Pacifico', cursive;
+        font-family: 'Lobster Two', cursive;
         a{
-            font-size: 1.5rem;
+            font-size: 2rem;
+            &:hover{
+                color: red;
+            }
             span{
                 color: red;
                 font-size: 1.5rem;
+                &:hover{
+                    color: black;
+                }
             }
         }
     }
@@ -24,12 +30,12 @@ header{
             a{    
                 padding-top: 1rem;
                 text-transform: uppercase;
+                font-family: 'Lobster Two', cursive;
                 &:hover{
-                    box-shadow: 0 2px 2px @primary-text-color;
-                    padding: .5rem;
-                    border-radius: 10px;
-                    background-color: black;
-                    color: white;
+                    padding-bottom: -1rem;
+                    margin-bottom: 0;
+                    border-bottom: 3px solid black;
+                    color: black;
                 }            
             }
         }

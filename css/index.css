@@ -12,14 +12,20 @@ header {
 }
 header .logo {
   width: 45%;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Lobster Two', cursive;
 }
 header .logo a {
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+header .logo a:hover {
+  color: red;
 }
 header .logo a span {
   color: red;
   font-size: 1.5rem;
+}
+header .logo a span:hover {
+  color: black;
 }
 header nav {
   display: flex;
@@ -30,13 +36,13 @@ header nav {
 header nav a {
   padding-top: 1rem;
   text-transform: uppercase;
+  font-family: 'Lobster Two', cursive;
 }
 header nav a:hover {
-  box-shadow: 0 2px 2px #1E1014;
-  padding: 0.5rem;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
+  padding-bottom: -1rem;
+  margin-bottom: 0;
+  border-bottom: 3px solid black;
+  color: black;
 }
 .container {
   margin: 5rem auto 2rem;
