@@ -439,7 +439,7 @@ footer::before {
   bottom: 0;
   right: 0;
   z-index: -1;
-  background-color: #380505;
+  background-color: #8f0606;
   clip-path: polygon(14% 0, 85% 1%, 100% 31%, 100% 72%, 86% 100%, 14% 100%, 0 76%, 0 31%);
 }
 footer h2 {
@@ -535,6 +535,62 @@ footer p {
 }
 .carousel .selected {
   display: block;
+}
+.about main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+.about main h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem;
+  color: #3d0303;
+}
+.about main .text-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  color: white;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px grey;
+}
+.about main .text-content .sect-text {
+  width: 70%;
+}
+.about main .text-content .sect-text h2 {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 0.5rem;
+  color: red;
+}
+.about main .text-content .sect-text .title {
+  font-size: 1.3rem;
+  margin-left: 4rem;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: 1rem;
+  color: #660000;
+}
+.about main .text-content .sect-text .text {
+  font-family: "Roboto Slab", serif;
+  width: 70%;
+  line-height: 1.6;
+  color: #000000;
+}
+.about main .text-content .sect-img {
+  width: 25%;
+}
+.about main .text-content .sect-img img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 10px;
 }
 * {
   margin: 0;
