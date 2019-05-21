@@ -132,28 +132,25 @@ header {
   width: 100%;
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 2px #555454;
+  background-color: #f63838;
   display: flex;
   justify-content: baseline;
   flex-direction: row;
-  z-index: 100;
+  z-index: 1000;
   overflow: hidden;
+  box-sizing: border-box;
 }
-.logo {
-  width: 45%;
-  font-family: "Lobster Two", cursive;
-}
-.logo a {
-  font-size: 2rem;
-}
-.logo a:hover {
-  color: red;
-}
-.logo a span {
-  color: red;
+.logo-img {
+  padding: 0.5rem;
   font-size: 1.5rem;
+  color: white;
+  font-family: 'Pacifico', cursive;
+  width: 45%;
 }
-.logo a span:hover {
-  color: black;
+@media (max-width: 400px) {
+  .logo-img {
+    font-size: 1.2rem;
+  }
 }
 nav {
   display: flex;
@@ -162,21 +159,22 @@ nav {
   width: 50%;
 }
 nav a {
-  padding-top: 1rem;
+  padding: 0.5rem;
   text-transform: uppercase;
   font-family: "Lobster Two", cursive;
   margin-left: 1rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   nav a {
-    display: none;
+    font-size: 0.8rem;
   }
 }
 nav a:hover {
-  padding-bottom: -1rem;
-  margin-bottom: 0;
-  border-bottom: 3px solid black;
-  color: black;
+  background-color: white;
+  border-radius: 5px;
+  color: #f63838;
+  box-shadow: 0 2px 2px grey;
+  padding-bottom: 0.5rem;
 }
 .container {
   height: 70vh;
@@ -290,6 +288,7 @@ nav a:hover {
   font-size: 2rem;
   position: relative;
   margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
 }
 .main-content .text-content h4::after {
   display: block;
@@ -335,6 +334,7 @@ nav a:hover {
   font-size: 2rem;
   position: relative;
   margin-left: 1rem;
+  padding-bottom: 0.4rem;
 }
 .main-content .gallery h4::after {
   display: block;
@@ -364,6 +364,7 @@ section {
   position: relative;
   margin-left: 1rem;
   margin-top: 2rem;
+  padding-bottom: 0.4rem;
 }
 @media (max-width: 800px) {
   .how {
@@ -384,7 +385,7 @@ section {
 @media (max-width: 800px) {
   .how::after {
     width: 20%;
-    left: 37%;
+    left: 34%;
   }
 }
 .how-to {
