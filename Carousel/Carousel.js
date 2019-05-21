@@ -10,30 +10,28 @@ class Carousel {
 
   moveRight = () => {
     this.image[this.currentIndex].style.display = "none";
-    if (this.currentIndex === this.image.length -1) {
+    if (this.currentIndex === this.image.length - 1) {
       this.currentIndex = 0;
       this.image[this.currentIndex].style.display = "block";
-    } else
-    {
+    } else {
       this.currentIndex += 1;
       this.image[this.currentIndex].style.display = "block";
     }
-  }
+  };
   moveLeft = () => {
     this.image[this.currentIndex].style.display = "none";
     if (this.currentIndex === 0) {
-      this.currentIndex = this.image.length -1;
+      this.currentIndex = this.image.length - 1;
       this.image[this.currentIndex].style.display = "block";
-    } else
-    {
+    } else {
       this.currentIndex -= 1;
       this.image[this.currentIndex].style.display = "block";
     }
-  }
+  };
   changeDirection = () => {
     this.left.addEventListener("click", () => this.moveLeft());
     this.right.addEventListener("click", () => this.moveRight());
-  }
+  };
 }
 
 let carousel = document.querySelector(".carousel");

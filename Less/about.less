@@ -1,85 +1,90 @@
-.about{
-    main{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        box-sizing: border-box;        
-        padding: 2rem;
-        width: 80%;
-        margin: 2rem auto;
-       
-        h1{
-            font-family: 'Pacifico', cursive;
-            font-size: 3rem;
-            text-align: center;
-            margin: 2rem;
-            color: rgb(61, 3, 3);
-            @media(max-width: 800px){
-                font-size: 1.6rem;
-            }
-        }
-        .text-content{
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 2rem;
-            color: white;
-            background-color: white;
-            padding: 1rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 2px grey;
-            @media(max-width: 800px){
-                flex-direction: column-reverse;
-            }
-            .sect-text{
-                width: 70%;
-                @media(max-width: 800px){
-                    width: 100%;
-                    text-align: center;
-                }
-                h2{
-                    font-size: 2rem;
-                    font-family: "Roboto Slab", serif;
-                    padding-bottom: .5rem;
-                    color: red;
-                    @media(max-width: 800px){
-                        font-size: 1.3rem;
-                        padding-top: 1rem;
-                    }
-                }
-                .title{
-                    font-size: 1.3rem;
-                    margin-left: 4rem;
-                    font-family: 'Pacifico', cursive;
-                    padding-bottom: 1rem;
-                    color: darken(red, 30%);
-                    @media(max-width: 800px){
-                        font-size: 1.1rem;
-                        margin-left: 0;
-                    }
-                }
-                .text{
-                    font-family: "Roboto Slab", serif;
-                    width: 70%;
-                    line-height: 1.6;
-                    color: darken(red, 50%);
-                    @media(max-width: 800px){
-                        width: 100%;
-                        line-height: 1.3;
-                        font-size: .9rem;
-                    }
-                }
-            }
-            .sect-img{
-                width: 25%;
-                @media(max-width: 800px){
-                    width: 100%;
-                }
-                img{
-                    width: 100%;
-                    height: 25vh;
-                    border-radius: 10px;
-                }
-            }
-        }
+.about {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+
+    h1 {
+      font-family: "Pacifico", cursive;
+      font-size: 3rem;
+      text-align: center;
+      margin: 2rem;
+      color: rgb(61, 3, 3);
+      @media (max-width: 800px) {
+        font-size: 1.6rem;
+      }
     }
+    .text-content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      color: white;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 2px grey;
+      @media (max-width: 800px) {
+        flex-direction: column-reverse;
+      }
+      .sect-text {
+        width: 70%;
+        @media (max-width: 800px) {
+          width: 100%;
+          text-align: center;
+        }
+        h2 {
+          font-size: 2rem;
+          font-family: "Roboto Slab", serif;
+          padding-bottom: 0.5rem;
+          color: red;
+          @media (max-width: 800px) {
+            font-size: 1.3rem;
+            padding-top: 1rem;
+          }
+        }
+        .title {
+          font-size: 1.3rem;
+          margin-left: 4rem;
+          font-family: "Pacifico", cursive;
+          padding-bottom: 1rem;
+          color: darken(red, 30%);
+          @media (max-width: 800px) {
+            font-size: 1.1rem;
+            margin-left: 0;
+          }
+        }
+        .text {
+          font-family: "Roboto Slab", serif;
+          width: 70%;
+          line-height: 1.6;
+          color: darken(red, 50%);
+          @media (max-width: 800px) {
+            width: 100%;
+            line-height: 1.3;
+            font-size: 0.9rem;
+          }
+        }
+      }
+      .sect-img {
+        width: 27%;
+        @media (max-width: 800px) {
+          width: 100%;
+          margin: 0 auto;
+        }
+        img {
+          width: 90%;
+          height: 28vh;
+          border-radius: 10px;
+          @media (max-width: 800px) {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
 }

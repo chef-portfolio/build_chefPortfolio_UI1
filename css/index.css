@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -144,7 +144,7 @@ header {
   padding: 0.5rem;
   font-size: 1.5rem;
   color: white;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   width: 45%;
 }
 @media (max-width: 400px) {
@@ -432,7 +432,7 @@ footer {
   position: relative;
 }
 footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -546,7 +546,7 @@ footer p {
   margin: 2rem auto;
 }
 .about main h1 {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   font-size: 3rem;
   text-align: center;
   margin: 2rem;
@@ -596,7 +596,7 @@ footer p {
 .about main .text-content .sect-text .title {
   font-size: 1.3rem;
   margin-left: 4rem;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   padding-bottom: 1rem;
   color: #660000;
 }
@@ -620,17 +620,24 @@ footer p {
   }
 }
 .about main .text-content .sect-img {
-  width: 25%;
+  width: 27%;
 }
 @media (max-width: 800px) {
   .about main .text-content .sect-img {
     width: 100%;
+    margin: 0 auto;
   }
 }
 .about main .text-content .sect-img img {
-  width: 100%;
-  height: 25vh;
+  width: 90%;
+  height: 28vh;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .about main .text-content .sect-img img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 * {
   margin: 0;
