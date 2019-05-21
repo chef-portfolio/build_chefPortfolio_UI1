@@ -4,43 +4,39 @@ header {
   width: 100%;
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 2px rgb(85, 84, 84);
+  background-color: rgb(246, 56, 56);
   .display-flex(baseline, row);
-  z-index: 100;
+  z-index: 1000;
   overflow: hidden;
+  box-sizing: border-box;
   }
-  .logo {
+  .logo-img{ 
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Pacifico', cursive;
     width: 45%;
-    font-family: "Lobster Two", cursive;
-    a {
-      font-size: 2rem;
-      &:hover {
-        color: red;
-      }
-      span {
-        color: red;
-        font-size: 1.5rem;
-        &:hover {
-          color: black;
-        }
-      }
+    @media (max-width: 400px) {
+      font-size: 1.2rem;
     }
   }
   nav {
     .display-flex(flex-end, row);
     width: 50%;
     a {
-      padding-top: 1rem;
+      padding: .5rem;
       text-transform: uppercase;
       font-family: "Lobster Two", cursive;
       margin-left: 1rem;
-      @media (max-width: 800px) {
-        display: none;
+      @media (max-width: 400px) {
+        font-size: .8rem;
       }
       &:hover {
-        padding-bottom: -1rem;
-        margin-bottom: 0;
-        border-bottom: 3px solid black;
-        color: black;
+        background-color: white;
+        border-radius: 5px;
+        color: rgb(246, 56, 56);
+        box-shadow: 0 2px 2px grey;
+        padding-bottom: .5rem;
       }
     }
   }
