@@ -2,11 +2,13 @@
   main {
     display: flex;
     flex-direction: column;
-    width: 100%;
     box-sizing: border-box;
     padding: 2rem;
     width: 80%;
     margin: 2rem auto;
+    @media (max-width: 800px){
+      width: 90%;
+    }
 
     h1 {
       font-family: "Pacifico", cursive;
@@ -29,6 +31,7 @@
       box-shadow: 0 2px 2px grey;
       @media (max-width: 800px) {
         flex-direction: column-reverse;
+        width: 100%;
       }
       .sect-text {
         width: 70%;
@@ -82,6 +85,7 @@
           @media (max-width: 800px) {
             width: 100%;
             margin: 0 auto;
+            height: 35vh;
           }
         }
       }
