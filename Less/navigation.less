@@ -9,34 +9,34 @@ header {
   z-index: 1000;
   overflow: hidden;
   box-sizing: border-box;
+}
+.logo-img {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Pacifico", cursive;
+  width: 45%;
+  @media (max-width: 400px) {
+    font-size: 1.2rem;
   }
-  .logo-img{ 
-    padding: .5rem;
-    font-size: 1.5rem;
-    color: white;
-    font-family: 'Pacifico', cursive;
-    width: 45%;
+}
+nav {
+  .display-flex(flex-end, row);
+  width: 50%;
+  a {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-family: "Lobster Two", cursive;
+    margin-left: 1rem;
     @media (max-width: 400px) {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
+    }
+    &:hover {
+      background-color: white;
+      border-radius: 5px;
+      color: rgb(246, 56, 56);
+      box-shadow: 0 2px 2px grey;
+      padding-bottom: 0.5rem;
     }
   }
-  nav {
-    .display-flex(flex-end, row);
-    width: 50%;
-    a {
-      padding: .5rem;
-      text-transform: uppercase;
-      font-family: "Lobster Two", cursive;
-      margin-left: 1rem;
-      @media (max-width: 400px) {
-        font-size: .8rem;
-      }
-      &:hover {
-        background-color: white;
-        border-radius: 5px;
-        color: rgb(246, 56, 56);
-        box-shadow: 0 2px 2px grey;
-        padding-bottom: .5rem;
-      }
-    }
-  }
+}
