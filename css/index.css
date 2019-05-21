@@ -539,11 +539,15 @@ footer p {
 .about main {
   display: flex;
   flex-direction: column;
-  width: 100%;
   box-sizing: border-box;
   padding: 2rem;
   width: 80%;
   margin: 2rem auto;
+}
+@media (max-width: 800px) {
+  .about main {
+    width: 90%;
+  }
 }
 .about main h1 {
   font-family: "Pacifico", cursive;
@@ -570,6 +574,7 @@ footer p {
 @media (max-width: 800px) {
   .about main .text-content {
     flex-direction: column-reverse;
+    width: 100%;
   }
 }
 .about main .text-content .sect-text {
@@ -637,6 +642,7 @@ footer p {
   .about main .text-content .sect-img img {
     width: 100%;
     margin: 0 auto;
+    height: 35vh;
   }
 }
 * {
