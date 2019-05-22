@@ -380,7 +380,8 @@ nav a:hover {
   color: black;
   font-size: 1.3rem;
   font-family: "Roboto Slab", serif;
-  line-height: 1.6;
+  line-height: 1.4;
+  padding-bottom: 1rem;
 }
 @media (max-width: 800px) {
   .main-content .text-content p {
@@ -389,7 +390,7 @@ nav a:hover {
   }
 }
 .main-content .gallery {
-  width: 50%;
+  width: 55%;
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
@@ -398,28 +399,6 @@ nav a:hover {
   .main-content .gallery {
     width: 100%;
     align-self: center;
-  }
-}
-.main-content .gallery h4 {
-  color: black;
-  font-size: 2rem;
-  position: relative;
-  margin-left: 1rem;
-  padding-bottom: 0.4rem;
-}
-.main-content .gallery h4::after {
-  display: block;
-  content: "";
-  width: 55%;
-  height: 4px;
-  background: #b60505;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-@media (max-width: 800px) {
-  .main-content .gallery h4::after {
-    width: 80%;
   }
 }
 section {
@@ -539,7 +518,7 @@ footer p {
   font-size: 0.8rem;
 }
 .carousel {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -548,6 +527,7 @@ footer p {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
+  transition: height 1s;
 }
 @media (max-width: 800px) {
   .carousel {
@@ -565,9 +545,9 @@ footer p {
   background-color: rgba(48, 46, 46, 0.26);
   font-size: 40px;
   border-radius: 50%;
-  position: absolute;
   width: 50px;
   height: 50px;
+  text-align: center;
   cursor: pointer;
 }
 @media (max-width: 800px) {
@@ -578,30 +558,61 @@ footer p {
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: wheaty;
-  background-color: rgba(15, 15, 15, 0.308);
+  color: red;
+  background-color: white;
   border: 2px solid grey;
 }
 .carousel .left-button {
   top: 50%;
-  left: 25px;
   transform: translate(0, -50%);
+  margin-right: 1rem;
 }
 .carousel .right-button {
   top: 50%;
-  right: 25px;
+  margin-left: 1rem;
   transform: translate(0, -50%);
 }
-.carousel img {
-  width: 95%;
-  height: 45vh;
+.carousel .image-content {
+  position: relative;
+  width: 80%;
   display: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  .carousel .image-content {
+    width: 100%;
+  }
+}
+.carousel .image-content:hover {
+  zoom: 105%;
+  border-radius: 30px;
+}
+.carousel .image-content img {
+  width: 100%;
+  height: 45vh;
   border-radius: 10px;
+  position: relative;
 }
 @media (max-width: 800px) {
-  .carousel img {
+  .carousel .image-content img {
     width: 100%;
     height: 35vh;
+  }
+}
+.carousel .image-content .overlay {
+  background-color: rgba(2, 1, 1, 0.356);
+  color: white;
+  position: absolute;
+  top: 70%;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+@media (max-width: 800px) {
+  .carousel .image-content .overlay {
+    font-size: 1.5rem;
   }
 }
 .carousel .selected {

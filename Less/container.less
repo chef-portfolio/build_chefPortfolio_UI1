@@ -128,7 +128,8 @@
       color: black;
       font-size: 1.3rem;
       font-family: "Roboto Slab", serif;
-      line-height: 1.6;
+      line-height: 1.4;
+      padding-bottom: 1rem;
       @media (max-width: 800px) {
         line-height: 1.4;
         font-size: 1rem;
@@ -136,33 +137,13 @@
     }
   }
   .gallery {
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
     @media (max-width: 800px) {
       width: 100%;
       align-self: center;
-    }
-    h4 {
-      color: black;
-      font-size: 2rem;
-      position: relative;
-      margin-left: 1rem;
-      padding-bottom: 0.4rem;
-      &::after {
-        display: block;
-        content: "";
-        width: 55%;
-        height: 4px;
-        background: rgb(182, 5, 5);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        @media (max-width: 800px) {
-          width: 80%;
-        }
-      }
     }
   }
 }
