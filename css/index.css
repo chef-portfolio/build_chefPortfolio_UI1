@@ -368,14 +368,14 @@ nav a:hover {
 }
 .main-content .text-content p {
   color: black;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: "Roboto Slab", serif;
   line-height: 1.6;
 }
 @media (max-width: 800px) {
   .main-content .text-content p {
     line-height: 1.4;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 .main-content .gallery {
