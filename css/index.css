@@ -635,6 +635,7 @@ footer p {
 }
 .about main {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
   padding: 2rem;
@@ -661,8 +662,8 @@ footer p {
 .about main .text-content {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   margin-bottom: 2rem;
-  color: white;
   background-color: white;
   padding: 1rem;
   border-radius: 10px;

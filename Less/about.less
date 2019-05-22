@@ -1,12 +1,11 @@
 .about {
   main {
-    display: flex;
-    flex-direction: column;
+    .display-flex(center, column);
     box-sizing: border-box;
     padding: 2rem;
     width: 80%;
     margin: 2rem auto;
-    @media (max-width: 900px){
+    @media (max-width: 900px) {
       width: 90%;
     }
 
@@ -21,11 +20,9 @@
       }
     }
     .text-content {
-      display: flex;
-      justify-content: space-between;
+      .display-flex(space-between);
       margin-bottom: 2rem;
-      color: white;
-      background-color: white;
+      background-color: @primary-text-color;
       padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 2px 2px grey;
@@ -39,7 +36,7 @@
         flex-direction: column-reverse;
         width: 100%;
       }
-      &:nth-child(even){
+      &:nth-child(even) {
         animation-name: moveInRight;
         animation-duration: 2s;
         animation-timing-function: ease-out;
@@ -54,7 +51,7 @@
           font-size: 2rem;
           font-family: "Roboto Slab", serif;
           padding-bottom: 0.5rem;
-          color: red;
+          color: @red;
           @media (max-width: 900px) {
             font-size: 1.5rem;
           }
@@ -62,19 +59,19 @@
             font-size: 1.3rem;
             padding-top: 1rem;
           }
-          a{
-            color: red;
+          a {
+            color: @red;
             font-size: 1.2rem;
-            padding-left: .5rem;
-            transition: .5s ease-out;
+            padding-left: 0.5rem;
+            transition: 0.5s ease-out;
             @media (max-width: 900px) {
-             font-size: 1rem;
+              font-size: 1rem;
             }
             @media (max-width: 500px) {
-             font-size: .8rem;
+              font-size: 0.8rem;
             }
-            &:hover{
-              color: darken(red, 30%);
+            &:hover {
+              color: darken(@red, 30%);
             }
           }
         }
@@ -83,7 +80,7 @@
           margin-left: 4rem;
           font-family: "Pacifico", cursive;
           padding-bottom: 1rem;
-          color: darken(red, 30%);
+          color: darken(@red, 30%);
           @media (max-width: 900px) {
             font-size: 1.1rem;
           }
@@ -96,7 +93,7 @@
           font-family: "Roboto Slab", serif;
           width: 70%;
           line-height: 1.6;
-          color: darken(red, 50%);
+          color: darken(@red, 50%);
           @media (max-width: 900px) {
             line-height: 1.3;
           }

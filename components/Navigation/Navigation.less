@@ -13,7 +13,7 @@ header {
 .logo-img {
   padding: 0.5rem;
   font-size: 1.5rem;
-  color: white;
+  color: @primary-text-color;
   font-family: "Pacifico", cursive;
   width: 45%;
   @media (max-width: 400px) {
@@ -29,7 +29,7 @@ header {
 nav {
   .display-flex(flex-end, row);
   width: 50%;
-  color: white;
+  color: @primary-text-color;
  
   @media (max-width: 500px) {
     left: -40%;
@@ -45,7 +45,7 @@ nav {
       font-size: 0.8rem;
     }
     &:hover {
-      background-color: white;
+      background-color: @primary-text-color;
       border-radius: 5px;
       color: rgb(246, 56, 56);
       box-shadow: 0 2px 2px grey;
@@ -82,7 +82,7 @@ nav {
   background-color: rgb(246, 56, 56);
   width: 100%;
   padding-bottom: 1rem;
-  border-top: solid 1px white;
+  border-top: solid 1px @primary-text-color;
   padding-top: .5rem;
   transition: 1s ease;
   opacity: 1;
