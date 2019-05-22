@@ -1,0 +1,92 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 2px rgb(85, 84, 84);
+  background-color: rgb(246, 56, 56);
+  .display-flex(baseline, row);
+  z-index: 1000;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.logo-img {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: @primary-text-color;
+  font-family: "Pacifico", cursive;
+  width: 45%;
+  @media (max-width: 400px) {
+    font-size: 1.2rem;
+  }
+  a {
+    transition: 0.5s ease-in;
+    &:hover {
+      color: darken(red, 20%);
+    }
+  }
+}
+nav {
+  .display-flex(flex-end, row);
+  width: 50%;
+  color: @primary-text-color;
+ 
+  @media (max-width: 500px) {
+    left: -40%;
+    opacity: 0;
+  }
+  a {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-family: "Lobster Two", cursive;
+    margin-left: 1rem;
+    transition: 0.5s ease-in;
+    @media (max-width: 500px) {
+      font-size: 0.8rem;
+    }
+    &:hover {
+      background-color: @primary-text-color;
+      border-radius: 5px;
+      color: rgb(246, 56, 56);
+      box-shadow: 0 2px 2px grey;
+      padding-bottom: 0.5rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+.menu {
+  padding: 0.5rem;
+  right: 10px;
+  position: absolute;
+  display: none;
+  transition: 2s;
+  @media (max-width: 800px) {
+    .display-flex(flex-end, row);
+  }
+  &:hover,
+  &:active{
+    box-shadow: 0 2px 2px rgb(236, 236, 236);
+  }
+  img{
+    width: 2rem;
+    height: 1.8rem;
+  }
+}
+
+.show{
+  .display-flex(flex-start, column);
+  position: fixed;
+  top: 55px;
+  left: 0;
+  background-color: rgb(246, 56, 56);
+  width: 100%;
+  padding-bottom: 1rem;
+  border-top: solid 1px @primary-text-color;
+  padding-top: .5rem;
+  transition: 1s ease;
+  opacity: 1;
+  a{
+    width: 20%;
+  }
+}
