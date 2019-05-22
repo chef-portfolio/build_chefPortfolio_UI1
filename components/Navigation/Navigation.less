@@ -19,16 +19,27 @@ header {
   @media (max-width: 400px) {
     font-size: 1.2rem;
   }
+  a {
+    transition: 0.5s ease-in;
+    &:hover {
+      color: darken(red, 20%);
+    }
+  }
 }
 nav {
   .display-flex(flex-end, row);
   width: 50%;
+  color: white;
+  @media (max-width: 500px) {
+    display: none;
+  }
   a {
     padding: 0.5rem;
     text-transform: uppercase;
     font-family: "Lobster Two", cursive;
     margin-left: 1rem;
-    @media (max-width: 400px) {
+    transition: 0.5s ease-in;
+    @media (max-width: 500px) {
       font-size: 0.8rem;
     }
     &:hover {
@@ -37,6 +48,42 @@ nav {
       color: rgb(246, 56, 56);
       box-shadow: 0 2px 2px grey;
       padding-bottom: 0.5rem;
+      text-decoration: underline;
     }
+  }
+}
+
+.menu {
+  padding: 0.5rem;
+  right: 10px;
+  position: absolute;
+  display: none;
+  transition: 2s;
+  @media (max-width: 800px) {
+    .display-flex(flex-end, row);
+  }
+  &:hover,
+  &:active{
+    box-shadow: 0 2px 2px rgb(236, 236, 236);
+  }
+  img{
+    width: 2rem;
+    height: 1.8rem;
+  }
+}
+
+.show{
+  .display-flex(flex-start, column);
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 900;
+  background-color: rgb(246, 56, 56);
+  width: 100%;
+  padding-bottom: 1rem;
+  border-top: solid 1px white;
+  padding-top: .5rem;
+  a{
+    width: 20%;
   }
 }
