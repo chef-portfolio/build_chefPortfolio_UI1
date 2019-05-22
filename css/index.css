@@ -167,7 +167,8 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
-    display: none;
+    left: -40%;
+    opacity: 0;
   }
 }
 nav a {
@@ -217,14 +218,15 @@ nav a:hover {
   justify-content: flex-start;
   flex-direction: column;
   position: fixed;
-  top: 50px;
+  top: 55px;
   left: 0;
-  z-index: 900;
   background-color: #f63838;
   width: 100%;
   padding-bottom: 1rem;
   border-top: solid 1px white;
   padding-top: 0.5rem;
+  transition: 1s ease;
+  opacity: 1;
 }
 .show a {
   width: 20%;
@@ -238,6 +240,11 @@ nav a:hover {
   transition: height 2s ease;
   background-attachment: fixed;
   position: relative;
+}
+@media (max-width: 500px) {
+  .container {
+    height: 60vh;
+  }
 }
 .container .logo {
   position: relative;
@@ -616,6 +623,19 @@ footer p {
     transform: translate(0);
   }
 }
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .about main {
   display: flex;
   flex-direction: column;
@@ -783,6 +803,7 @@ footer p {
   padding: 0;
   box-sizing: border-box;
   font-size: 1rem;
+  transition: height 1s;
 }
 li {
   list-style: none;

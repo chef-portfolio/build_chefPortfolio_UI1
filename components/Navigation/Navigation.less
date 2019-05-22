@@ -30,8 +30,10 @@ nav {
   .display-flex(flex-end, row);
   width: 50%;
   color: white;
+ 
   @media (max-width: 500px) {
-    display: none;
+    left: -40%;
+    opacity: 0;
   }
   a {
     padding: 0.5rem;
@@ -75,14 +77,15 @@ nav {
 .show{
   .display-flex(flex-start, column);
   position: fixed;
-  top: 50px;
+  top: 55px;
   left: 0;
-  z-index: 900;
   background-color: rgb(246, 56, 56);
   width: 100%;
   padding-bottom: 1rem;
   border-top: solid 1px white;
   padding-top: .5rem;
+  transition: 1s ease;
+  opacity: 1;
   a{
     width: 20%;
   }
