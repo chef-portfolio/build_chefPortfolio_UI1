@@ -567,13 +567,14 @@ section {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.1rem;
   padding-top: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   margin-bottom: 0;
   color: #9c1616;
 }
 @media (max-width: 900px) {
   .recipes .chef .chef-info .content h4 {
     font-size: 1;
+    padding-left: 0;
   }
 }
 .recipes .chef .chef-info .content h4 span {
