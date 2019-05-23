@@ -1,6 +1,7 @@
 header {
   position: fixed;
   top: 0;
+  max-width: 1200px;
   width: 100%;
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 2px rgb(85, 84, 84);
@@ -31,7 +32,7 @@ nav {
   width: 50%;
   color: @primary-text-color;
  
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     left: -40%;
     opacity: 0;
   }
@@ -61,7 +62,7 @@ nav {
   position: absolute;
   display: none;
   transition: 2s;
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     .display-flex(flex-end, row);
   }
   &:hover,
@@ -87,6 +88,6 @@ nav {
   transition: 1s ease;
   opacity: 1;
   a{
-    width: 20%;
+    width: max-content;
   }
 }
