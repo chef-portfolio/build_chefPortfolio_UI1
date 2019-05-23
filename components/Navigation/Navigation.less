@@ -32,7 +32,7 @@ nav {
   width: 50%;
   color: @primary-text-color;
  
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     left: -40%;
     opacity: 0;
   }
@@ -62,7 +62,7 @@ nav {
   position: absolute;
   display: none;
   transition: 2s;
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     .display-flex(flex-end, row);
   }
   &:hover,
@@ -88,6 +88,6 @@ nav {
   transition: 1s ease;
   opacity: 1;
   a{
-    width: 20%;
+    width: max-content;
   }
 }
