@@ -6,6 +6,21 @@ class Carousel {
     this.image = carousel.querySelectorAll(".image-content");
     this.currentIndex = 0;
     this.changeDirection();
+    setInterval(() => {
+      if (this.image[this.currentIndex].style.display === 'block')
+      {
+        this.image[this.currentIndex].style.display = 'none'
+        if (this.currentIndex === this.image.length - 1)
+        {
+          this.currentIndex = 0;
+        }
+        this.currentIndex += 1;
+        this.image[this.currentIndex].style.display = "block";
+      } else
+      {
+        this.image[this.currentIndex].style.display = "block";
+      }
+    }, 5000);
   }
 
   moveRight = () => {
