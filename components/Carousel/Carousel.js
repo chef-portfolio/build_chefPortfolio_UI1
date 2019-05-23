@@ -20,7 +20,7 @@ class Carousel {
       {
         this.image[this.currentIndex].style.display = "block";
       }
-    }, 5000);
+    }, 2000);
   }
 
   moveRight = () => {
