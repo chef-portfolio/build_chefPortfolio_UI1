@@ -728,15 +728,14 @@ footer p {
     width: 100%;
   }
 }
-.carousel .image-content:hover {
-  zoom: 105%;
-  border-radius: 30px;
-}
 .carousel .image-content img {
   width: 100%;
   height: 45vh;
   border-radius: 10px;
   position: relative;
+}
+.carousel .image-content img:hover {
+  box-shadow: 5px 5px 5px grey;
 }
 @media (max-width: 800px) {
   .carousel .image-content img {
@@ -834,6 +833,11 @@ footer p {
   animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-out;
+  cursor: pointer;
+}
+.about main .text-content:hover {
+  box-shadow: 2px 5px 5px gray;
+  background-color: #cccccc;
 }
 @media (max-width: 900px) {
   .about main .text-content {
