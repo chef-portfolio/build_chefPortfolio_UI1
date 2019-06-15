@@ -6,7 +6,7 @@
 <p><strong>Chef Portfolio</strong> provides a place for people to share and explore each others posted recipes. It gives food bloggers an online presence to showcase their recipes to the world as well as a simple form to upload recipes to the site.</p>
 
 ## Link to the hosted link
-https://festive-sinoussi-8d2296.netlify.com/about.html  
+https://festive-sinoussi-8d2296.netlify.com/ 
 
 ## How to use
 
